@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecflowAPIExample", "SpecflowExample\SpecflowAPIExample.csproj", "{EC8E9533-C27A-43D0-8F02-3AFE31D32351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestClient", "..\RestClient\RestClient\RestClient.csproj", "{0B57493B-31A0-4004-B3E7-A3076A9438FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A30F9651-204D-4D5C-85F6-345CF4950A41}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC8E9533-C27A-43D0-8F02-3AFE31D32351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8E9533-C27A-43D0-8F02-3AFE31D32351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8E9533-C27A-43D0-8F02-3AFE31D32351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8E9533-C27A-43D0-8F02-3AFE31D32351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B57493B-31A0-4004-B3E7-A3076A9438FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B57493B-31A0-4004-B3E7-A3076A9438FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B57493B-31A0-4004-B3E7-A3076A9438FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B57493B-31A0-4004-B3E7-A3076A9438FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F33EE14-A126-4308-BD82-77EE70DE87DC}
+	EndGlobalSection
+EndGlobal
