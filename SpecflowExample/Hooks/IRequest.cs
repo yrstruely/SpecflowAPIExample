@@ -22,7 +22,7 @@ namespace SpecflowExample.Hooks
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 
@@ -37,7 +37,7 @@ namespace SpecflowExample.Hooks
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

@@ -50,11 +50,32 @@ namespace SpecflowExample.Hooks
             objectContainer.RegisterInstanceAs<IResponse>(response);
         }
 
-        [AfterScenario]
-        public void AfterScenario()
+        [AfterScenario("A_API")]
+        public void AfterScenarioA()
         {
-            objectContainer.Resolve<IRequest>("request").Dispose();
-            objectContainer.Resolve<IResponse>("response").Dispose();
+            TearDown("A");
+        }
+
+        [AfterScenario("B_API")]
+        public void AfterScenarioB()
+        {
+            TearDown("B");
+        }
+
+        public void TearDown(string api)
+        {
+            switch (api)
+            {
+                case "A":
+                    objectContainer.Resolve<ARequest>("request").Dispose();
+                    objectContainer.Resolve<AResponse>("response").Dispose();
+                    break;
+                case "B":
+                    objectContainer.Resolve<BRequest>("request").Dispose();
+                    objectContainer.Resolve<BResponse>("response").Dispose();
+                    break;
+
+            }
         }
     }
 }
