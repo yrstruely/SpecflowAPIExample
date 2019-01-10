@@ -72,7 +72,7 @@ namespace SpecflowExample.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check the number of races in a season")]
-        [NUnit.Framework.CategoryAttribute("api")]
+        [NUnit.Framework.CategoryAttribute("B_API")]
         [NUnit.Framework.TestCaseAttribute("2017", "20", null)]
         [NUnit.Framework.TestCaseAttribute("2016", "21", null)]
         [NUnit.Framework.TestCaseAttribute("1966", "9", null)]
@@ -80,20 +80,20 @@ namespace SpecflowExample.Features
         public virtual void CheckTheNumberOfRacesInASeason(string season, string numberOfCircuits, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "api"};
+                    "B_API"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the number of races in a season", null, @__tags);
-#line 7
+#line 8
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 8
- testRunner.Given(string.Format("I want to know the number of Formula One races in {0}", season), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.When("I retrieve the circuit list for that season", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given(string.Format("I want to know the number of Formula One races in {0}", season), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
+ testRunner.When("I retrieve the circuit list for that season", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
  testRunner.Then(string.Format("there should be {0} circuits in the list returned", numberOfCircuits), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

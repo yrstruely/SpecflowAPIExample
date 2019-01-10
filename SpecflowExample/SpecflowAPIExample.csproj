@@ -70,6 +70,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CircuitAPI.feature</DependentUpon>
     </Compile>
+    <Compile Include="Hooks\BeforeHook.cs" />
+    <Compile Include="Hooks\IResponse.cs" />
+    <Compile Include="Hooks\IRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\CircuitsApiSteps.cs" />
   </ItemGroup>
